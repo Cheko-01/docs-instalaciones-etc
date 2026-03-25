@@ -55,3 +55,30 @@ npm install
 
 
 ##### Posibles soluciones a fallos
+
+```bash
+chown -R www-data:www-data /var/www/html/storage
+```
+
+```bash
+chown -R www-data:www-data /var/www/html/bootstrap/cache
+```
+
+```bash
+chmod -R 775 /var/www/html/storage
+```
+
+```bash
+chmod -R 775 /var/www/html/bootstrap/cache
+```
+
+Laravel usa estas carpetas para:
+
+- `/storage` - logs, archivos subidos, caché
+- `/bootstrap/cache` - archivos de caché del framework
+
+Si el servidor web no tiene permisos, pasan errores como:
+
+- **Permission denied**
+- **Failed to open stream**
+- **Laravel no guarda logs**
