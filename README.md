@@ -1,84 +1,60 @@
-# Instalación
+# Documentación del Proyecto
 
-#### Entrar al proyecto
+Bienvenido a la documentación oficial del proyecto.
 
-```bash
-cd nombre-del-repo
-```
+## Estructura
 
+- [Instalaciones](./instalaciones/)
+- [Guías](./guias/)
+- [Manuales](./manuales/)
 
+---
 
-#### Revisar archivos clave
+## Inicio
 
-Busca si existen:
+Para empezar rápidamente:
 
-- `docker-compose.yml` (configuración de contenedor)
-- `Dockerfile`
-- `.env.example`
+1. Sigue la guía de instalación local:  
+   👉 [Instalación local](./instalaciones/local.md)
 
+2. Consulta la guía de inicio:  
+   👉 [Inicio rápido](./guias/inicio-rapido.md)
 
+---
 
-#### Configurar variables de entorno
+## Secciones
 
-Copia el archivo `.env`
+### ⚙️ Instalaciones
+Documentación sobre cómo instalar y configurar el proyecto.
 
-```bash
-cp .env.example .env
-```
+- [Instalación local](./instalaciones/local.md)
+- [Instalación en producción](./instalaciones/produccion.md)
+- [Dependencias](./instalaciones/dependencias.md)
 
-Luego edítalo si es necesario (Recomendación: pedir el .env para algunas credenciales necesarias)
+---
 
+### Guías
+Explicaciones paso a paso para usar o desarrollar el proyecto.
 
+- [Inicio rápido](./guias/inicio-rapido.md)
+- [Flujo de trabajo](./guias/flujo-trabajo.md)
+- [Buenas prácticas](./guias/buenas-practicas.md)
 
-#### Levantar los contenedores
+---
 
-```bash
-docker compose up -d --build
-```
+### Manuales
+Referencia más completa según el tipo de usuario.
 
+- [Manual de usuario](./manuales/usuario.md)
+- [Manual de desarrollador](./manuales/desarrollador.md)
+- [Manual de administrador](./manuales/admin.md)
 
+---
 
-#### Instalar dependencias de Laravel
+## Contribución
 
-```bash
-docker compose exec app bash
-```
+1. Haz fork del repositorio
+2. Crea una rama (`feature/nueva-funcionalidad`)
+3. Haz commit de tus cambios
+4. Abre un Pull Request
 
-```bash
-composer install
-```
-
-```bash
-npm install
-```
-
-
-
-##### Posibles soluciones a fallos
-
-```bash
-chown -R www-data:www-data /var/www/html/storage
-```
-
-```bash
-chown -R www-data:www-data /var/www/html/bootstrap/cache
-```
-
-```bash
-chmod -R 775 /var/www/html/storage
-```
-
-```bash
-chmod -R 775 /var/www/html/bootstrap/cache
-```
-
-Laravel usa estas carpetas para:
-
-- `/storage` - logs, archivos subidos, caché
-- `/bootstrap/cache` - archivos de caché del framework
-
-Si el servidor web no tiene permisos, pasan errores como:
-
-- **Permission denied**
-- **Failed to open stream**
-- **Laravel no guarda logs**
