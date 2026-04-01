@@ -15,16 +15,16 @@ Bienvenido a la documentación oficial del proyecto.
 Para empezar rápidamente:
 
 1. Sigue la guía de instalación local:  
-   👉 [Instalación local](./instalaciones/local.md)
+   [Instalación local](./instalaciones/local.md)
 
 2. Consulta la guía de inicio:  
-   👉 [Inicio rápido](./guias/inicio-rapido.md)
+    [Inicio rápido](./guias/inicio-rapido.md)
 
 ---
 
 ## Secciones
 
-### ⚙️ Instalaciones
+### Instalaciones
 Documentación sobre cómo instalar y configurar el proyecto.
 
 - [Instalación local](./instalaciones/local.md)
