@@ -4,9 +4,9 @@ Bienvenido a la documentación oficial del proyecto.
 
 ## Estructura
 
-- [Instalaciones](./instalaciones/)
-- [Guías](./guias/)
-- [Manuales](./manuales/)
+- [Instalaciones](./installations/)
+- [Guías](./guides/)
+- [Manuales](./manuals/)
 
 ---
 
@@ -15,7 +15,7 @@ Bienvenido a la documentación oficial del proyecto.
 Para empezar rápidamente:
 
 1. Sigue la guía de instalación local:  
-   [Instalación local](./instalaciones/local.md)
+   [Instalación local](./installations/local.md)
 
 2. Consulta la guía de inicio:  
     [Inicio rápido](./guias/inicio-rapido.md)
@@ -27,9 +27,8 @@ Para empezar rápidamente:
 ### Instalaciones
 Documentación sobre cómo instalar y configurar el proyecto.
 
-- [Instalación local](./instalaciones/local.md)
+- [Instalación local](./installations/local.md)
 - [Instalación en producción](./instalaciones/produccion.md)
-- [Dependencias](./instalaciones/dependencias.md)
 
 ---
 
