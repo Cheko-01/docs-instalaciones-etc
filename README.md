@@ -46,7 +46,6 @@ Referencia más completa según el tipo de usuario.
 
 - [Manual de usuario](./manuales/usuario.md)
 - [Manual de desarrollador](./manuales/desarrollador.md)
-- [Manual de administrador](./manuales/admin.md)
 
 ---
 
